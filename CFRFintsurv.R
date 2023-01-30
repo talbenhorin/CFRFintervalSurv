@@ -4,7 +4,7 @@ CFRF <- read.csv("CFRFsa.csv", fill = FALSE, header = TRUE)
 
 library(icenReg)
 
-BS <- CFRF[which(CFRF$site=='Nelson Bay'), ]
+BS <- CFRF[which(CFRF$site=='Bogue Sound'), ]
 
 np_fit = ic_np(cbind(t1, t2) ~ line, data = BS)
 
